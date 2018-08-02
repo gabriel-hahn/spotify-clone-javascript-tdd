@@ -4,6 +4,8 @@
   "description": "Spotify player clone with TDD",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +23,11 @@
     "url": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd/issues"
   },
   "homepage": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd#readme",
-  "dependencies": {
-    
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "husky": "^0.14.3"
   }
 }
