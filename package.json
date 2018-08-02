@@ -1,0 +1,24 @@
+{
+  "name": "spotify-clone-javascript-tdd",
+  "version": "1.0.0",
+  "description": "Spotify player clone with TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-hahn/spotify-clone-javascript-tdd.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Gabriel Hahn Schaeffer <gabriel_hahn@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd/issues"
+  },
+  "homepage": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd#readme"
+}
