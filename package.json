@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd/issues"
   },
-  "homepage": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd#readme"
+  "homepage": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd#readme",
+  "dependencies": {
+    
+  }
 }
