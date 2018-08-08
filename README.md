@@ -1,4 +1,4 @@
 # spotify-clone-javascript-tdd
-Spotify clone with pure JavaScript + TDD - JavaScript TDD Course :notes:
+Spotify web clone with pure JavaScript + TDD - JavaScript TDD Course :notes:
 
 Spotify Web API (https://developer.spotify.com/documentation/web-api/)
