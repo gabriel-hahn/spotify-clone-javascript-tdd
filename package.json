@@ -6,7 +6,19 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/webpack --colors --progress",
+    "watch": "npm run build -- --watch",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "nyc": {
+    "functions": 80,
+    "lines": 80,
+    "check-coverage": true,
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "repository": {
     "type": "git",
@@ -23,11 +35,24 @@
     "url": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd/issues"
   },
   "homepage": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
