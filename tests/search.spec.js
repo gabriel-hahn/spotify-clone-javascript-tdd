@@ -2,17 +2,16 @@ import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 import sinonStubPromise from 'sinon-stub-promise';
-
 import {
   search, searchAlbums, searchArtists, searchTracks, searchPlaylists,
-} from '../src/main';
+} from '../src/search';
 
 global.fetch = require('node-fetch');
 
 chai.use(sinonChai);
 sinonStubPromise(sinon);
 
-describe('Spotify', () => {
+describe('Search', () => {
   let fetchedStub;
   let promise;
 
