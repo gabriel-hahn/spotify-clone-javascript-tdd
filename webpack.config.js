@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+/* const webpack = require('webpack');
 
 const nodeENV = process.env.NODE_ENV || 'production';
 
@@ -34,4 +34,4 @@ webpack.exports = {
       'process.env': { NODE_ENV: JSON.stringify(nodeENV) },
     }),
   ],
-};
+}; */
