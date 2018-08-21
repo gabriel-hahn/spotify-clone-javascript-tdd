@@ -18,10 +18,38 @@ This library relies on [Fetch API](https://fetch.spec.whatwg.org/). And this pro
 
 This library depends on [fetch](https://fetch.spec.whatwg.org/) to make requests to the Spotify Web API. For environments that don't support fetch, you'll need to provide a [polyfill](https://github.com/github/fetch) to browser or [polyfill](https://github.com/bitinn/node-fetch) to Node.
 
-# Getting Started
+# Installation
 
 ```sh
 $ npm install spotify-wrapper-api --save
 ```
 
-Developer: Gabriel Hahn Schaeffer
+# How to use
+
+### ES6
+
+```js
+// To import a specific method
+import { method } from 'spotify-wrapper-api';
+
+// To import everything
+import * as spotifyWrapperApi from 'spotify-wrapper-api';
+```
+
+### CommonJS
+
+```js
+var spotifyWrapperApi = require('spotify-wrapper-api');
+```
+
+### UMD in Browser
+
+```html
+<!-- To import non-minified version -->
+<script src="spotify-wrapper-api.umd.js"></script>
+
+<!-- To import minified version -->
+<script src="spotify-wrapper-api.umd.min.js"></script>
+```
+
+After that the library will be available to the Global as `spotifyWrapperApi`.
