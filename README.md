@@ -53,3 +53,8 @@ var spotifyWrapperApi = require('spotify-wrapper-api');
 ```
 
 After that the library will be available to the Global as `spotifyWrapperApi`.
+Follow as example:
+
+```js
+const albums = spotifyWrapperApi.searchAlbums('Choosen Artist');
+```
