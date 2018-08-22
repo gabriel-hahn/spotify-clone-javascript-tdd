@@ -4,6 +4,6 @@ export const TOKEN_API = '';
 export const HEADERS = {
   headers: {
     Authorization: `Bearer ${TOKEN_API}`,
-    Accept: 'application/json'
+    Accept: 'application/json',
   },
 };
