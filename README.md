@@ -1,5 +1,7 @@
 # spotify-clone-javascript-tdd
 
+[![Build Status](https://travis-ci.org/gabriel-hahn/spotify-clone-javascript-tdd.svg?branch=master)](https://travis-ci.org/gabriel-hahn/spotify-clone-javascript-tdd)
+
 A Spotify player clone with a wrapper to work with the follow API:
 
 [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
