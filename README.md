@@ -1,8 +1,6 @@
 # spotify-clone-javascript-tdd
 
-[![Build Status](https://travis-ci.org/gabriel-hahn/spotify-clone-javascript-tdd.svg?branch=master)](https://travis-ci.org/gabriel-hahn/spotify-clone-javascript-tdd)
-
-[![Coverage Status](https://coveralls.io/repos/github/gabriel-hahn/spotify-clone-javascript-tdd/badge.svg?branch=master)](https://coveralls.io/github/gabriel-hahn/spotify-clone-javascript-tdd?branch=master)
+[![Build Status](https://travis-ci.org/gabriel-hahn/spotify-clone-javascript-tdd.svg?branch=master)](https://travis-ci.org/gabriel-hahn/spotify-clone-javascript-tdd) [![Coverage Status](https://coveralls.io/repos/github/gabriel-hahn/spotify-clone-javascript-tdd/badge.svg?branch=master)](https://coveralls.io/github/gabriel-hahn/spotify-clone-javascript-tdd?branch=master)
 
 A Spotify player clone with a wrapper to work with the follow API:
 
