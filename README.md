@@ -21,7 +21,7 @@ This library depends on [fetch](https://fetch.spec.whatwg.org/) to make requests
 # Installation
 
 ```sh
-$ npm install spotify-wrapper-api --save
+$ npm install spotify-wrapper --save
 ```
 
 # How to use
@@ -30,31 +30,31 @@ $ npm install spotify-wrapper-api --save
 
 ```js
 // To import a specific method
-import { method } from 'spotify-wrapper-api';
+import { method } from 'spotify-wrapper';
 
 // To import everything
-import * as spotifyWrapperApi from 'spotify-wrapper-api';
+import * as spotifyWrapper from 'spotify-wrapper';
 ```
 
 ### CommonJS
 
 ```js
-var spotifyWrapperApi = require('spotify-wrapper-api');
+var spotifyWrapper = require('spotify-wrapper');
 ```
 
 ### UMD in Browser
 
 ```html
 <!-- To import non-minified version -->
-<script src="spotify-wrapper-api.umd.js"></script>
+<script src="spotify-wrapper.umd.js"></script>
 
 <!-- To import minified version -->
-<script src="spotify-wrapper-api.umd.min.js"></script>
+<script src="spotify-wrapper.umd.min.js"></script>
 ```
 
-After that the library will be available to the Global as `spotifyWrapperApi`.
+After that the library will be available to the Global as `spotifyWrapper`.
 Follow as example:
 
 ```js
-const albums = spotifyWrapperApi.searchAlbums('Choosen Artist');
+const albums = spotifyWrapper.search.albums('Choosen Artist');
 ```

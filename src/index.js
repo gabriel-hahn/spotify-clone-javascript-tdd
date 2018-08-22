@@ -1,10 +1,11 @@
 /* global fetch */
-
 import search from './search';
 import album from './album';
-import { API_URL } from './config';
 
-export default class SpotifyWrapperApi {
+import API_URL from './config';
+import toJSON from './utils';
+
+export default class SpotifyWrapper {
   constructor(options) {
     this.apiURL = options.apiURL || API_URL;
     this.token = options.token;
@@ -16,9 +17,10 @@ export default class SpotifyWrapperApi {
   request(url) {
     const headers = {
       headers: {
-        Authorization: `Bearer ${this.token}`,
+        Authorization: `'Bearer ${this.token}'`,
       },
     };
-    return fetch(url, headers);
+
+    return fetch(url, headers).then(toJSON);
   }
 }
