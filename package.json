@@ -1,7 +1,7 @@
 {
-  "name": "spotify-clone-javascript-tdd",
+  "name": "spotify-wrapper",
   "version": "1.0.0",
-  "description": "Spotify player clone with TDD",
+  "description": "A wrapper to work with the Spotify Web API",
   "main": "src/index.js",
   "scripts": {
     "clear": "rimraf lib",
