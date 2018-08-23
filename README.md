@@ -23,7 +23,7 @@ This library depends on [fetch](https://fetch.spec.whatwg.org/) to make requests
 # Installation
 
 ```sh
-$ npm install spotify-wrapper --save
+$ npm install spotify-wrapper-web --save
 ```
 
 # How to use
@@ -32,16 +32,16 @@ $ npm install spotify-wrapper --save
 
 ```js
 // To import a specific method
-import { method } from 'spotify-wrapper';
+import { method } from 'spotify-wrapper-web';
 
 // To import everything
-import * as spotifyWrapper from 'spotify-wrapper';
+import * as spotifyWrapperWeb from 'spotify-wrapper-web';
 ```
 
 ### CommonJS
 
 ```js
-var spotifyWrapper = require('spotify-wrapper');
+var spotifyWrapperWeb = require('spotify-wrapper-web');
 ```
 
 ### UMD in Browser
@@ -54,9 +54,13 @@ var spotifyWrapper = require('spotify-wrapper');
 <script src="spotify-wrapper.umd.min.js"></script>
 ```
 
-After that the library will be available to the Global as `spotifyWrapper`.
+After that the library will be available to the Global as `SpotifyWrapper`.
 Follow as example:
 
 ```js
-const albums = spotifyWrapper.search.albums('Choosen Artist');
+const spotify = new SpotifyWrapper({
+  token: 'YOUR_TOKEN_HERE'
+});
+
+const albums = spotify.search.albums('Choosen Artist');
 ```
