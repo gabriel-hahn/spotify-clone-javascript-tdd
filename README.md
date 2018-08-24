@@ -1,4 +1,4 @@
-# spotify-clone-javascript-tdd
+# spotify-wrapper
 
 [![Build Status](https://travis-ci.org/gabriel-hahn/spotify-wrapper.svg?branch=master)](https://travis-ci.org/gabriel-hahn/spotify-wrapper) [![Coverage Status](https://coveralls.io/repos/github/gabriel-hahn/spotify-clone-javascript-tdd/badge.svg?branch=master)](https://coveralls.io/github/gabriel-hahn/spotify-clone-javascript-tdd?branch=master)
 
