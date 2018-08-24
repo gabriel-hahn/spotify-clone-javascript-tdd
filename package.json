@@ -1,6 +1,6 @@
 {
   "name": "spotify-wrapper-web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper to work with the Spotify Web API",
   "main": "lib/index.js",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabriel-hahn/spotify-clone-javascript-tdd.git"
+    "url": "git+https://github.com/gabriel-hahn/spotify-wrapper.git"
   },
   "keywords": [
     "js",
@@ -43,9 +43,9 @@
   "author": "Gabriel Hahn Schaeffer <gabriel_hahn@hotmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd/issues"
+    "url": "https://github.com/gabriel-hahn/spotify-wrapper/issues"
   },
-  "homepage": "https://github.com/gabriel-hahn/spotify-clone-javascript-tdd#readme",
+  "homepage": "https://github.com/gabriel-hahn/spotify-wrapper#readme",
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
