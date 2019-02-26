@@ -36,43 +36,43 @@ describe('Album', () => {
   });
   describe('Get Album', () => {
     it('Should call fetch method', () => {
-      const album = spotify.album.getAlbum();
+      spotify.album.getAlbum();
       expect(stubedFetch).to.have.been.calledOnce;
     });
 
     it('Should call fetch with the correct URL', () => {
-      const album = spotify.album.getAlbum('4aawyAB9vmqN3uQ7FjRGTy');
+      spotify.album.getAlbum('4aawyAB9vmqN3uQ7FjRGTy');
       expect(stubedFetch).to.have.been.calledWith('https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy');
 
-      const album2 = spotify.album.getAlbum('4aawkAB9vmqN3uQ7FjRGTy');
+      spotify.album.getAlbum('4aawkAB9vmqN3uQ7FjRGTy');
       expect(stubedFetch).to.have.been.calledWith('https://api.spotify.com/v1/albums/4aawkAB9vmqN3uQ7FjRGTy');
     });
   });
   describe('Get Albums', () => {
     it('Should call fetch method', () => {
-      const albums = spotify.album.getAlbums();
+      spotify.album.getAlbums();
       expect(stubedFetch).to.have.been.calledOnce;
     });
 
     it('Should call fetch with the correct URL', () => {
-      const albums = spotify.album.getAlbums(['4aawyAB9vmqN3uQ7FjRGTy', '4aawyAB9vmqN3uQ7FjRFRy']);
+      spotify.album.getAlbums(['4aawyAB9vmqN3uQ7FjRGTy', '4aawyAB9vmqN3uQ7FjRFRy']);
       expect(stubedFetch).to.have.been.calledWith('https://api.spotify.com/v1/albums/?ids=4aawyAB9vmqN3uQ7FjRGTy,4aawyAB9vmqN3uQ7FjRFRy');
 
-      const albums2 = spotify.album.getAlbums(['4aawkAB9vmqN3uQ7FjR23y', '4aawyAB9vmqN3uQ7FjRGTy']);
+      spotify.album.getAlbums(['4aawkAB9vmqN3uQ7FjR23y', '4aawyAB9vmqN3uQ7FjRGTy']);
       expect(stubedFetch).to.have.been.calledWith('https://api.spotify.com/v1/albums/?ids=4aawkAB9vmqN3uQ7FjR23y,4aawyAB9vmqN3uQ7FjRGTy');
     });
   });
   describe('Get Album Tracks', () => {
     it('Should call fetch method', () => {
-      const tracks = spotify.album.getTracks();
+      spotify.album.getTracks();
       expect(stubedFetch).to.have.been.calledOnce;
     });
 
     it('Should call fetch with the correct URL', () => {
-      const tracks = spotify.album.getTracks(['4aawyAB9vmqN3uQ7FjRGTy', '4aawyAB9vmqN3uQ7FjRFRy']);
+      spotify.album.getTracks(['4aawyAB9vmqN3uQ7FjRGTy', '4aawyAB9vmqN3uQ7FjRFRy']);
       expect(stubedFetch).to.have.been.calledWith('https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy,4aawyAB9vmqN3uQ7FjRFRy/tracks');
 
-      const tracks2 = spotify.album.getTracks(['4aawkAB9vmqN3uQ7FjR23y', '4aawyAB9vmqN3uQ7FjRGTy']);
+      spotify.album.getTracks(['4aawkAB9vmqN3uQ7FjR23y', '4aawyAB9vmqN3uQ7FjRGTy']);
       expect(stubedFetch).to.have.been.calledWith('https://api.spotify.com/v1/albums/4aawkAB9vmqN3uQ7FjR23y,4aawyAB9vmqN3uQ7FjRGTy/tracks');
     });
   });
